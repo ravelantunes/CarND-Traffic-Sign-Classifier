@@ -131,4 +131,19 @@ However, the modal was able to predict all the images correctly, giving 100% acc
 |:---------------------:|:---------------------------------------------:| 
 | 0.934        			| Go straight or right   									| 
 | 0.065     				| Ahead only							|
-| 0.001					| Traffic signals		
+| 0.001					| Traffic signals
+
+
+For a test, I took a sample of another "Go straight or right" image from the training set to compare the softmax with the softmax of the fourth image above. The result is as follow:		
+
+#### Additional "Go straight or right" Image
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.999        			| Go straight or right   									| 
+| 0.000     				| Turn left ahead							|
+| 0.000					| Stop
+
+The softmax of the train data set is more certain than the additional images, besides the new images being much clearer and better quality. That might point to some overfitting to the train data, or at least to the type and quality of image used to train the model.
+
+However, given the similar scores that the model got between training, test, validation, and the 5 additional images, it seems that the model generalizing well.
