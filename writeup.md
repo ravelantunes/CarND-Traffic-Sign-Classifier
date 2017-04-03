@@ -146,4 +146,4 @@ For a test, I took a sample of another "Go straight or right" image from the tra
 
 The softmax of the train data set is more certain than the additional images, besides the new images being much clearer and better quality. That might point to some overfitting to the train data, or at least to the type and quality of image used to train the model.
 
-However, given the similar scores that the model got between training, test, validation, and the 5 additional images, it seems that the model generalizing well.
+However, given the similar scores that the model got between training, test, validation, and the 5 additional images, it seems that the model generalizing well. The 5 new images got 100% accuracy, while the validation set got 97%.
